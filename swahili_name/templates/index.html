@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{%block content%}
+
+
+
+
+<div class="welcome">
+    <div class="navbar">
+        <img src="https://dcassetcdn.com/design_img/3376381/706656/706656_18607382_3376381_0f358a72_thumbnail.png" class="logo">
+        <ul>
+    
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="#Create">Create Name</a></li>
+            <li><a href="#contact">About</a></li>
+            <li><a href="{{url_for('index')}}">Contact</a></li>        
+            <li ><a class="active" href="#about">Sign Up</a></li>
+            <li><a class="active" href="#about">Log In</a></li>
+        </ul>        
+    </div>
+    <div class="content">
+        <h1>Welcome To Swahili Name App!</h1>
+        <p> <a href="{{ url_for('register') }}">Click here</a> to generate your name</p>
+    </div>
+    
+</div>
+
+    
+{%endblock%}
+
+
+
