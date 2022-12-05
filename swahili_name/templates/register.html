@@ -1,31 +1,46 @@
 {% extends 'layout.html' %}
 {% block content %}
     <div class="welcome">
-        <form action="" method="POST">
-            {{ form.hidden_tag() }}
-            <div class="sign">
-                 <h1>Join Today</h1>
-                <div>
-                    {{ form.username.label(class='nav') }}
-                    {{ form.username }}
-                </div>
-                <div>
-                    {{ form.email.label(class='nav') }}
-                    {{ form.email }}
-                </div>
-                <div>
-                    {{ form.password.label(class='nav') }}
-                    {{ form.password }}
-                </div>
-                <div>
-                    {{ form.confirm_password.label(class='nav') }}
-                    {{ form.confirm_password }}
-                </div>
-            </div>
+        <div class="navbar">
+            <img src="https://dcassetcdn.com/design_img/3376381/706656/706656_18607382_3376381_0f358a72_thumbnail.png" class="logo">
+            <ul>
+        
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="#contact">About</a></li>
+                <li><a href="{{url_for('index')}}">Contact</a></li>        
+                <li><a class="active" href="#about">Log In</a></li>
+            </ul>        
+        </div>
+        <div class="signinbox">
+
+            <img src="https://previews.123rf.com/images/tanyastock/tanyastock1803/tanyastock180300490/97923644-user-icon-avatar-login-sign-circle-button-with-soft-color-gradient-background-vector-.jpg" class="avator">
+            <h1> Join Today </h1>
+            
+            <form action="", method="POST" >
+                {{ form.hidden_tag() }}
+                
+                <p>{{ form.username.label }}</p>
+                {{ form.username(class='box') }}
+            
+            
+                <p>{{ form.email.label }}</p>
+                {{ form.email(class='box') }}
+            
+            
+                <p>{{ form.password.label }}</p>
+                {{ form.password(class='box') }}
+            
+            
+                <p>{{ form.confirm_password.label }}</p>
+                {{ form.confirm_password(class='box') }}
+            
             <div>
-                {{ form.submit }}
+                {{ form.submit(class='submitbox') }}
             </div>
-        </form>
+                
+            </form>
+        </div>
+        
     </div>
     <div>
         <small>

@@ -59,44 +59,67 @@
   position: relative;
   top: 120px;
 }
-form{
-  text-align: center;
-  padding: 0 40px;
-  box-sizing: border-box;
-  width: 40%;
-  background-color: white;
-  position: absolute;
+.signinbox{
+  background: rgb(0, 0, 0);
   top: 50%;
+  color: #fff;
+  width: 320px;
+  height: 450px;
   left: 50%;
-  transform: translate(-50%,-50%);
-  width: 400px;
-  
-
-}
-.content form{
-  text-align: center;
-  padding: 0 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
+  padding: 50px 50px;
 }
-form .sign{
+.avator{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.signinbox h1{
+  margin-top: 30%;
   position: relative;
+  left: 18%;
+  margin: 0;
+  padding: 0 0 20px;
+  line-height: 25px;
+  font-size: 22px;
+  color: purple;
+}
+
+form{
+  top: 20px;
+  
+}
+.signinbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.box{
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
   outline: none;
-  margin: 30px 0;
-
+  height: 18px;
 }
-.sign h1{
-  padding: 0 0 20px 0;
-
+.submitbox{
+  border: none;
+  outline: none;
+  height: 30px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 100%;
 }
-.nav{
-   
-    top: 50%;
-    left: 5px;
-    color: black;
-    font-size: 16px;
-    pointer-events: none;
-    display: inline-block;
-    text-align: right;
-   
+.submitbox:hover{
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
 }
 
