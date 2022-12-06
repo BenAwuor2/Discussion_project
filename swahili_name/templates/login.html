@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="welcome">
+    <div class="navbar">
+        <img src="https://dcassetcdn.com/design_img/3376381/706656/706656_18607382_3376381_0f358a72_thumbnail.png" class="logo">
+        <ul>
+    
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="#contact">About</a></li>
+            <li><a href="{{url_for('home')}}">Contact</a></li>        
+            <li><a class="active" href="{{ url_for('register') }}">SignUp</a></li>
+        </ul>        
+    </div>
+    <div class="signinbox">
+
+        <img src="https://previews.123rf.com/images/tanyastock/tanyastock1803/tanyastock180300490/97923644-user-icon-avatar-login-sign-circle-button-with-soft-color-gradient-background-vector-.jpg" class="avator">
+        <h1> Join Today </h1>
+        
+        <form action="", method="POST" >
+            {{ form.hidden_tag() }}
+                    
+            <p>{{ form.email.label }}</p>
+            {{ form.email(class='box') }}
+        
+        
+            <p>{{ form.password.label }}</p>
+            {{ form.password(class='box') }}
+        
+        
+            <p>{{ form.remember }}</p>
+           
+        
+        <div>
+            {{ form.submit(class='submitbox') }}
+        </div>
+            
+        </form>
+    </div>
+    
+</div>
+
+{% endblock %}
